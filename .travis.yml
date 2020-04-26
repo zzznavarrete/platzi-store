@@ -18,13 +18,25 @@ git:
 script: 
   - yarn build
 
+# Para que lleguen alertas a cierto correo electrónico
+notifications:
+  email: 
+    recipients:
+      - nicolasnn@vivaldi.net
+    on_success: always
+    on_failure: always
+
+
 deploy: 
   provider: pages
   skip-cleanup: true
   keep-history: true
+  # Ojo con esta variable, se debe setear en travis ci (web)
   github-token: $GITHUB_TOKEN
   local-dir: dist/
   target-branch: gh-pages
-  commit_message: "Deploy del proyecto"
+  commit_message: "Deploy del proyecto 2"
   on:
     branch: master
+
+
