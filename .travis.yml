@@ -20,6 +20,7 @@ script:
 
 # Para que lleguen alertas a cierto correo electrónico
 notifications:
+  slack: 3wavesinnovations:kAgdXNZub36nBm8rkJRnosZU
   email: 
     recipients:
       - nicolasnn@vivaldi.net
